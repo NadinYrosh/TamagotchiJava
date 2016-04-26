@@ -39,7 +39,8 @@ public class Tamagotchi {
     return false;
   }
 
-  public void setFoodLevel(int foodLevel){
+  public int setFoodLevel(int foodLevel){
     mFoodLevel = foodLevel;
+    return mFoodLevel;
   }
 }

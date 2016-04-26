@@ -4,9 +4,11 @@
     <ul>
     #foreach ($pet in $pets)
       <li>Name: $pet.getName()</li>
-      <li>Food level: $pet.timePasses()</li>
+      <li>Food level: $pet.setFoodLevel(0)</li>
+      <li> Is Alive?: </li>
+      <li>$pet.isAlive()</li>
       #end
-  </ul>
+    </ul>
 #else
     <p>
       No Pet Exists!
