@@ -29,7 +29,7 @@ public class TamagotchiTest {
   @Test
   public void isAlive_foodBelow1_false() {
     Tamagotchi myPet = new Tamagotchi("lil dragon");
-    myPet.setFoodLevel(0); // make a method that will change the food level of your Tamagotchi
+    myPet.setFoodLevel(0);
     assertEquals(false, myPet.isAlive());
   }
 

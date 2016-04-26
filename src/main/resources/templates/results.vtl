@@ -1,1 +1,16 @@
-
+<h1>All Pets!</h1>
+#if($pets)
+  <h3>
+    <ul>
+    #foreach ($pet in $pets)
+      <li>Name: $pet.getName()</li>
+      <li>Food level: $pet.timePasses()</li>
+      #end
+  </ul>
+#else
+    <p>
+      No Pet Exists!
+    </p>
+  </h3>
+#end
+<h3><a href="/">Go make another pet!</a></h3>

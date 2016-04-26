@@ -1,20 +1,8 @@
-<h1>Task list!</h1>
+<h1>Tamagotchi!</h1>
 
-#if ($tasks)
-  <ul>
-    #foreach ($task in $tasks)
-      <li>$task.getDescription()</li>
-    #end
-  </ul>
-#else
-  <p>No tasks!</p>
-#end
+<form action="/results" method="post">
+  <label for="tamagotchiName"><h3>Make your Tamagotchi</h3></label>
+  <input id="tamagotchiName" name="tamagotchiName" type="text">
 
-<p>Add a new Task:</p>
-
-<form action="/tasks" method="post">
-  <label for="description">Task Description</label>
-  <input id="description" name="description" type="text">
-
-  <button type="submit" class="btn btn-default">Add task</button>
+  <button type="submit" class="btn btn-default">Make One!</button>
 </form>
