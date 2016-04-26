@@ -27,4 +27,19 @@ public class Tamagotchi {
     return mActivityLevel;
   }
 
+  public int timePasses(){
+    mFoodLevel = getFoodLevel() - 1;
+    return mFoodLevel;
+  }
+
+  public boolean isAlive(){
+    if(mFoodLevel > 0){
+      return true;
+    }
+    return false;
+  }
+
+  public void setFoodLevel(int foodLevel){
+    mFoodLevel = foodLevel;
+  }
 }
